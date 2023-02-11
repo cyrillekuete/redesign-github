@@ -16,11 +16,11 @@ const RepoStats = () => {
           ></path>
         </svg>
         <div className="flex items-center text-xl ml-2">
-          <a href="#" className="text-blue-600 hover:underline">
+          <a href="#" className="text-[#58a6ff] hover:underline">
             tailwindcss
           </a>
           <span className="ml-1 mr-1">/</span>
-          <a href="#" className="text-blue-600 hover:underline font-semibold">
+          <a href="#" className="text-[#58a6ff] hover:underline font-semibold">
             tailwindcss
           </a>
         </div>

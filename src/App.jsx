@@ -1,9 +1,11 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+
+
 import "./App.css";
 import Navbar from "./components/Navbar";
 import RepoStats from "./components/RepoStats";
 import { RepoNav } from "./components/RepoNav";
+import Container from "./components/Container";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Navbar />
       <RepoStats />
       <RepoNav />
+      <Container />
+      <Footer />
     </div>
   );
 }
