@@ -1119,27 +1119,239 @@ function App() {
             {/* README CONTAINER ENDS HERE */}
           </div>
           <div className="sidebar w-1/4">
-            sLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
-            luctus metus, a semper enim. Quisque malesuada egestas quam, sit
-            amet convallis velit posuere vel. Praesent sapien lorem, tristique
-            sit amet lacus nec, sodales accumsan eros. Suspendisse a feugiat
-            nisi, non feugiat metus. Sed vitae aliquet orci, at consectetur
-            orci. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. Mauris vel posuere nunc, id
-            fermentum est. Nam sit amet interdum mauris. Curabitur tempus elit
-            id interdum viverra. Duis fringilla tortor ut lacus convallis
-            ultricies. Maecenas rutrum congue augue, ut placerat erat luctus ac.
-            Nam in ligula nunc. Cras quis dui a leo elementum placerat vel vel
-            augue. Fusce sit amet sapien dictum, maximus arcu a, ultrices
-            tellus. Pellentesque urna ipsum, posuere eget mi quis, molestie
-            vehicula diam. Proin auctor mauris dui, eu hendrerit ipsum
-            ullamcorper vitae. Donec sollicitudin nibh commodo nisi malesuada
-            ullamcorper. Nullam ac nisl venenatis, cursus lorem vel, commodo
-            nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Quisque mattis nisl sagittis nunc pulvinar, interdum posuere massa
-            porttitor. Etiam leo ipsum, condimentum id turpis eu, laoreet auctor
-            augue. Nulla ut consectetur dui. Sed efficitur libero egestas massa
-            ullamcorper, vel ornare risus gravida.
+            {/* ABOUT CONTENT STARTS HERE*/}
+            <div className="">
+              <h4 className="text-base font-semibold">About</h4>
+              <p className="text-base mt-4">
+                A utility-first CSS framework for rapid UI Development
+              </p>
+              <div className="flex items-center space-x-2 mt-4">
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  data-view-component="true"
+                  class="w-4 fill-current mr-2"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"
+                  ></path>
+                </svg>
+                <a
+                  href="#"
+                  className="text-blue-600 hover:underline font-semibod"
+                >
+                  tailwindcss.com/
+                </a>
+              </div>
+              <div className="tags text-md font-semibold flex items-center flex-wrap mt-2">
+                <a
+                  href="#"
+                  className="bg-blue-100 mr-2 hover:bg-blue-200 text-blue-600 rounded-full px-3 py-1 mt-2"
+                >
+                  responsive
+                </a>
+                <a
+                  href="#"
+                  className="bg-blue-100 mr-2 hover:bg-blue-200 text-blue-600 rounded-full px-3 py-1 mt-2"
+                >
+                  postcss
+                </a>
+                <a
+                  href="#"
+                  className="bg-blue-100 mr-2 hover:bg-blue-200 text-blue-600 rounded-full px-3 py-1 mt-2"
+                >
+                  utility-classes
+                </a>
+                <a
+                  href="#"
+                  className="bg-blue-100 mr-2 hover:bg-blue-200 text-blue-600 rounded-full px-3 py-1 mt-2"
+                >
+                  functional-css
+                </a>
+                <a
+                  href="#"
+                  className="bg-blue-100 mr-2 hover:bg-blue-200 text-blue-600 rounded-full px-3 py-1 mt-2"
+                >
+                  css-framework
+                </a>
+              </div>
+              <a href="#" className="flex items-center space-x-2 mt-4 group">
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  data-view-component="true"
+                  class=" group-hover:text-blue-600 w-4 fill-current mr-2"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M0 1.75A.75.75 0 01.75 1h4.253c1.227 0 2.317.59 3 1.501A3.744 3.744 0 0111.006 1h4.245a.75.75 0 01.75.75v10.5a.75.75 0 01-.75.75h-4.507a2.25 2.25 0 00-1.591.659l-.622.621a.75.75 0 01-1.06 0l-.622-.621A2.25 2.25 0 005.258 13H.75a.75.75 0 01-.75-.75V1.75zm8.755 3a2.25 2.25 0 012.25-2.25H14.5v9h-3.757c-.71 0-1.4.201-1.992.572l.004-7.322zm-1.504 7.324l.004-5.073-.002-2.253A2.25 2.25 0 005.003 2.5H1.5v9h3.757a3.75 3.75 0 011.994.574z"
+                  ></path>
+                </svg>
+                <span className="text-gray-600 group-hover:text-blue-600 font-semibold">
+                  Readme
+                </span>
+              </a>
+              <a href="#" className="flex items-center space-x-2 mt-4 group">
+                <svg
+                  aria-hidden="true"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  version="1.1"
+                  width="16"
+                  data-view-component="true"
+                  class="group-hover:text-blue-600 w-4 fill-current mr-2"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.75.75a.75.75 0 00-1.5 0V2h-.984c-.305 0-.604.08-.869.23l-1.288.737A.25.25 0 013.984 3H1.75a.75.75 0 000 1.5h.428L.066 9.192a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.514 3.514 0 00.686.45A4.492 4.492 0 003 11c.88 0 1.556-.22 2.023-.454a3.515 3.515 0 00.686-.45l.045-.04.016-.015.006-.006.002-.002.001-.002L5.25 9.5l.53.53a.75.75 0 00.154-.838L3.822 4.5h.162c.305 0 .604-.08.869-.23l1.289-.737a.25.25 0 01.124-.033h.984V13h-2.5a.75.75 0 000 1.5h6.5a.75.75 0 000-1.5h-2.5V3.5h.984a.25.25 0 01.124.033l1.29.736c.264.152.563.231.868.231h.162l-2.112 4.692a.75.75 0 00.154.838l.53-.53-.53.53v.001l.002.002.002.002.006.006.016.015.045.04a3.517 3.517 0 00.686.45A4.492 4.492 0 0013 11c.88 0 1.556-.22 2.023-.454a3.512 3.512 0 00.686-.45l.045-.04.01-.01.006-.005.006-.006.002-.002.001-.002-.529-.531.53.53a.75.75 0 00.154-.838L13.823 4.5h.427a.75.75 0 000-1.5h-2.234a.25.25 0 01-.124-.033l-1.29-.736A1.75 1.75 0 009.735 2H8.75V.75zM1.695 9.227c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L3 6.327l-1.305 2.9zm10 0c.285.135.718.273 1.305.273s1.02-.138 1.305-.273L13 6.327l-1.305 2.9z"
+                  ></path>
+                </svg>
+                <span className="text-gray-600 group-hover:text-blue-600 font-semibold">
+                  MIT License
+                </span>
+              </a>
+
+              <a href="#" className="flex items-center space-x-2 mt-4 group">
+                <svg
+                  aria-hidden="true"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  version="1.1"
+                  width="16"
+                  data-view-component="true"
+                  class="text-gray-600 group-hover:text-blue-600 font-semibold"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8.048 2.241c.964-.709 2.079-1.238 3.325-1.241a4.613 4.613 0 013.282 1.355c.41.408.757.86.996 1.428.238.568.348 1.206.347 1.968 0 2.193-1.505 4.254-3.081 5.862-1.496 1.526-3.213 2.796-4.249 3.563l-.22.163a.75.75 0 01-.895 0l-.221-.163c-1.036-.767-2.753-2.037-4.249-3.563C1.51 10.008.007 7.952.002 5.762a4.614 4.614 0 011.353-3.407C3.123.585 6.223.537 8.048 2.24zm-1.153.983c-.81.78-1.546 1.669-2.166 2.417-.184.222-.358.432-.52.623a.75.75 0 00.04 1.016c.35.35.697.697 1.043 1.047.866.875 2.292.914 3.185.032.264-.26.534-.528.802-.797.694-.694 1.8-.701 2.474-.03L12.92 8.7l.283.284c-.244.334-.515.666-.81.995l-1.384-1.28A.75.75 0 109.99 9.802l1.357 1.252c-.325.31-.656.606-.984.887l-1.48-1.366a.75.75 0 10-1.018 1.102L9.191 12.9c-.433.34-.838.643-1.191.905-1.04-.773-2.537-1.907-3.846-3.242C2.611 8.99 1.502 7.306 1.502 5.75a3.114 3.114 0 01.913-2.335c1.159-1.158 3.23-1.224 4.48-.191zm7.112 4.442c.313-.65.491-1.293.491-1.916v-.001c0-.614-.088-1.045-.23-1.385-.143-.339-.357-.633-.673-.949a3.113 3.113 0 00-2.218-.915c-1.092.003-2.165.627-3.226 1.602-.823.755-1.554 1.637-2.228 2.45l-.127.154.562.566a.756.756 0 001.066.02l.794-.79c1.258-1.258 3.312-1.31 4.594-.032.396.394.792.791 1.173 1.173l.022.023z"
+                  ></path>
+                </svg>
+                <span className="text-gray-600 group-hover:text-blue-600 font-semibold">
+                  Code of conduct
+                </span>
+              </a>
+
+              <a href="#" className="flex items-center space-x-2 mt-4 group">
+                <svg
+                  aria-hidden="true"
+                  viewBox="0 0 16 16"
+                  data-view-component="true"
+                  class="text-gray-600 w-4 group-hover:text-blue-600 font-semibold"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"
+                  ></path>
+                </svg>
+                <span className="text-gray-600 group-hover:text-blue-600 font-semibold">
+                  Stars
+                </span>
+              </a>
+
+              <a href="#" className="flex items-center space-x-2 mt-4 group">
+                <svg
+                  aria-hidden="true"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  version="1.1"
+                  width="16"
+                  data-view-component="true"
+                  class="text-gray-600 group-hover:text-blue-600 font-semibold"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"
+                  ></path>
+                </svg>
+                <span className="text-gray-600 group-hover:text-blue-600 font-semibold">
+                  Forks
+                </span>
+              </a>
+            </div>
+            {/* ABOUT CONTENT ENDS HERE*/}
+
+            {/* RELEASES SECTION STARTS HERE*/}
+            <div className="releases border-t border-gray-400 pt-6 mt-6 ">
+              <h4 className="text-base font-semibold flex items-center">
+                <span>Releases</span>
+                <div className="text-xs rounded-lg bg-gray-300 px-2 ml-1">
+                  89
+                </div>
+              </h4>
+              <a href="#" class="flex mt-4 group">
+                <span className="ml-2">
+                  <span className="font-semibold group-hover:text-blue-600">
+                    v1.5.1
+                  </span>
+                  <span className="ml-2 text-xs border border-green-500 text-green-600 rounded-full font-semibold inline-block px-2">
+                    Latest
+                  </span>
+                  <span className="block text-xs group-hover:text-blue-600">
+                    5 days ago
+                  </span>
+                </span>
+              </a>
+            </div>
+            {/* RELEASES SECTION ENDS HERE*/}
+
+            {/* USEDBY SECTION STARTS HERE*/}
+            <div className="releases border-t border-gray-400 pt-6 mt-6 ">
+              <h4 className="text-base font-semibold flex items-center">
+                <span>Used By</span>
+                <div className="text-xs rounded-lg bg-gray-300 px-2 ml-1">
+                  5000 +
+                </div>
+              </h4>
+              <div className="mt-4">
+                <a href="#" className="flex items-center">
+                  <img
+                    class="w-8 border-2 border-white rounded-full"
+                    src="https://avatars.githubusercontent.com/u/90881706?s=64&amp;v=4"
+                    alt="@kiennecacbann"
+                  />
+                  <img
+                    class="w-8 border-2 -ml-2 border-white rounded-full"
+                    src="https://avatars.githubusercontent.com/u/114445932?s=64&amp;v=4"
+                    alt="@offside-club"
+                  />
+                  <img
+                    class="w-8 border-2 -ml-2 border-white rounded-full"
+                    src="https://avatars.githubusercontent.com/u/90881706?s=64&amp;v=4"
+                    alt="@kiennecacbann"
+                  />
+                  <img
+                    class="w-8 border-2 -ml-2 border-white rounded-full"
+                    src="https://avatars.githubusercontent.com/u/114445932?s=64&amp;v=4"
+                    alt="@offside-club"
+                  />
+                  <span className="text-xs text-blue-600 font-semibold hover:underline">
+                    + 58,000
+                  </span>
+                </a>
+              </div>
+            </div>
+            {/* USEDBY SECTION ENDS HERE*/}
+
+            {/* PACKAGES SECTION STARTS HERE*/}
+            <div className="releases border-t border-gray-400 pt-6 mt-6 ">
+              <h4 className="text-base font-semibold">
+                <span>Used By</span>
+                <div className="text-xs">No package available yet</div>
+              </h4>
+            </div>
+            {/* PACKAGES SECTION ENDS HERE*/}
+
+            {/* CONTRIBUTORS SECTION STARTS HERE*/}
+            <div className="releases border-t border-gray-400 pt-6 mt-6 ">
+              <h4 className="text-base font-semibold flex items-center">
+                <span>Contributors</span>
+                <div className="text-xs rounded-lg bg-gray-300 px-2 ml-1">
+                  120+
+                </div>
+              </h4>
+            </div>
+            {/* CONTRIBUTORS SECTION ENDS HERE*/}
           </div>
         </div>
         {/* REPO CONTENT ENDS HERE*/}
