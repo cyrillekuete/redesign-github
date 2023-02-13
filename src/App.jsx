@@ -156,14 +156,14 @@ function App() {
               >
                 tailwind
               </a>
-              <span className="ml-2 rounded-full border text-xs px-2 py-1">
+              <span className="ml-2 rounded-full border text-xs px-2 py-2">
                 Public
               </span>
             </div>
           </div>
           <div className="flex space-x-2">
             <div className="flex text-xs">
-              <button className="border border-gray-300 rounded rounded-r-none px-3 py-1 flex items-center space-x-1">
+              <button className="border border-gray-300 rounded rounded-r-none px-3 py-2 flex items-center space-x-1">
                 <svg
                   aria-hidden="true"
                   viewBox="0 0 16 16"
@@ -194,7 +194,7 @@ function App() {
 
               <a
                 href="#"
-                className="border border-gray-300 rounded rounded-l-none border-l-0 px-3 py-1 "
+                className="border border-gray-300 rounded rounded-l-none border-l-0 px-3 py-2 "
               >
                 <span className="bg-gray-200 font-semibold rounded-full border text-xs px-2">
                   430
@@ -233,7 +233,7 @@ function App() {
 
               <a
                 href="#"
-                className="border border-gray-300 rounded rounded-l-none border-l-0 px-3 py-1 "
+                className="border border-gray-300 rounded rounded-l-none border-l-0 px-3 py-2 "
               >
                 <span className="bg-gray-200 font-semibold rounded-full border text-xs px-2">
                   120
@@ -275,7 +275,7 @@ function App() {
 
               <a
                 href="#"
-                className="border border-gray-400 rounded rounded-l-none border-l-0 px-3 py-1 "
+                className="border border-gray-400 rounded rounded-l-none border-l-0 px-3 py-2 "
               >
                 <span className="bg-gray-200 font-semibold rounded-full border text-xs px-2">
                   120
@@ -447,15 +447,783 @@ function App() {
           <div className="file-explorer-container w-3/4 mr-8">
             {/* BRANCH NAVIGATION STARTS HERE */}
             <div className="branch-navigation flex items-center justify-between">
-              <div className="flex items-center space-x-2"></div>
-              <div className="flex items-center space-x-2"></div>
+              <div className="flex items-center space-x-3">
+                <button className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-200 flex items-center space-x-2">
+                  <svg
+                    text="gray"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    data-view-component="true"
+                    class="w-4 h-4 fill-current"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"
+                    ></path>
+                  </svg>
+                  <span className="font-semibold">Master</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4 fill-current"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </button>
+                <a
+                  href="#"
+                  className="flex items-center space-x-2 px-2 py-1 group"
+                >
+                  <svg
+                    text="gray"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    data-view-component="true"
+                    class="w-4 h-4 fill-current text-gray-600 group-hover:text-blue-600"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M11.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122V6A2.5 2.5 0 0110 8.5H6a1 1 0 00-1 1v1.128a2.251 2.251 0 11-1.5 0V5.372a2.25 2.25 0 111.5 0v1.836A2.492 2.492 0 016 7h4a1 1 0 001-1v-.628A2.25 2.25 0 019.5 3.25zM4.25 12a.75.75 0 100 1.5.75.75 0 000-1.5zM3.5 3.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0z"
+                    ></path>
+                  </svg>
+                  <span className="group-hover:text-blue-600">
+                    <span className="font-semibold">25 </span>
+                    <span className="font-medium">branches</span>
+                  </span>
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center space-x-2 px-2 py-1 group"
+                >
+                  <svg
+                    text="gray"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    data-view-component="true"
+                    class="w-4 h-4 fill-current text-gray-600 group-hover:text-blue-600"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"
+                    ></path>
+                  </svg>
+                  <span className="group-hover:text-blue-600">
+                    <span className="font-semibold">79 </span>
+                    <span className="font-medium">tags</span>
+                  </span>
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <button className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-200 flex items-center space-x-2">
+                  <span className="font-semibold">Got to file</span>
+                </button>
+                <button className="border border-gray-300 rounded-md px-4 py-2 hover:bg-gray-200 flex items-center space-x-2">
+                  <span className="font-semibold">Add file</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4 fill-current"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </button>
+                <button className="border text-gray-100  rounded-md px-4 py-2 bg-green-500 hover:bg-green-600 flex items-center space-x-2">
+                  <svg
+                    aria-hidden="true"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    width="16"
+                    data-view-component="true"
+                    class="w-4 h-4 fill-current"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.72 3.22a.75.75 0 011.06 1.06L2.06 8l3.72 3.72a.75.75 0 11-1.06 1.06L.47 8.53a.75.75 0 010-1.06l4.25-4.25zm6.56 0a.75.75 0 10-1.06 1.06L13.94 8l-3.72 3.72a.75.75 0 101.06 1.06l4.25-4.25a.75.75 0 000-1.06l-4.25-4.25z"
+                    ></path>
+                  </svg>
+                  <span className="font-semibold">Master</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-4 h-4 fill-current"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                    />
+                  </svg>
+                </button>
+              </div>
             </div>
             {/* BRANCH NAVIGATION ENDS HERE */}
+
+            {/* COMMITS CONTAINER STARTS HERE */}
+            <div className="commits-container bg-blue-100 rounded-md rounded-b-none border border-blue-200 flex border-b-0 items-center justify-between py-4 px-4 mt-5">
+              <div className="flex items-center space-x-2">
+                <a href="#">
+                  <img
+                    data-test-selector="commits-avatar-stack-avatar-image"
+                    src="https://avatars.githubusercontent.com/in/715?s=48&amp;v=4"
+                    className="h-6 w-6 rounded-md"
+                    alt="@depfu"
+                  />
+                </a>
+                <a href="#" className=" font-semibold hover:underline">
+                  adamwathan
+                </a>
+                <a href="#" className=" hover:text-blue-600 hover:underline">
+                  1.5.1
+                </a>
+              </div>
+              <div className="flex items-center">
+                <a href="#">
+                  <svg
+                    aria-label="32 / 32 checks OK"
+                    role="img"
+                    viewBox="0 0 16 16"
+                    data-view-component="true"
+                    class="w-4  fill-current text-green-500"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"
+                    ></path>
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  className=" font-mono text-xs text-gray-600 hover:underline hover:text-blue-500 ml-2"
+                >
+                  da070bd
+                </a>
+
+                <a
+                  href="#"
+                  className="text-gray-600 font-semibold  hover:text-blue-500 hover:underline ml-2"
+                >
+                  4 days ago
+                </a>
+                <a
+                  href="#"
+                  className="flex items-center space-x-2 px-2 py-1 group"
+                >
+                  <svg
+                    text="gray"
+                    aria-hidden="true"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    width="16"
+                    data-view-component="true"
+                    class="w-4 fill-current text-gray-600 group-hover:text-blue-600"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"
+                    ></path>
+                  </svg>
+                  <span className="group-hover:text-blue-600">
+                    <span className="font-semibold">5,301 </span>
+                    <span className="font-medium">Commits</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+            {/* COMMITS CONTAINER ENDS HERE */}
+
+            {/* FILE EXPLORER STARTS HERE */}
+            <div className="file-explorer  rounded-md rounded-t-none border border-gray-2300 text-gray-700 divide-y divide-gray-300">
+              <div className="flex justify-between px-4 py-4">
+                <div className=" flex items-center 4/12">
+                  <svg
+                    aria-label="Directory"
+                    aria-hidden="true"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    width="16"
+                    data-view-component="true"
+                    class="fill-current text-gray-300"
+                  >
+                    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+                  </svg>
+                  <a
+                    href="#"
+                    className="flex ml-2 font-semibold hover:text-blue-600"
+                  >
+                    .github
+                  </a>
+                </div>
+                <div className="6/12 flex items-center">
+                  <a
+                    href="#"
+                    className="flex ml-2  hover:text-blue-600 hover:underline"
+                  >
+                    update issues template
+                  </a>
+                </div>
+
+                <div className="2/12">
+                  <a href="#" className="flex ml-2 ">
+                    4 days ago
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-between px-4 py-4 hover>bg-gray-200">
+                <div className=" flex items-center 4/12">
+                  <svg
+                    aria-label="Directory"
+                    aria-hidden="true"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    width="16"
+                    data-view-component="true"
+                    class="fill-current text-gray-300"
+                  >
+                    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+                  </svg>
+                  <a
+                    href="#"
+                    className="flex ml-2 font-semibold hover:text-blue-600"
+                  >
+                    __tests__
+                  </a>
+                </div>
+                <div className="6/12 flex items-center">
+                  <a
+                    href="#"
+                    className="flex ml-2  hover:text-blue-600 hover:underline"
+                  >
+                    remove stale tests
+                  </a>
+                </div>
+
+                <div className="2/12">
+                  <a href="#" className="flex ml-2 ">
+                    6 days ago
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-between px-4 py-4">
+                <div className=" flex items-center 4/12">
+                  <svg
+                    aria-label="Directory"
+                    aria-hidden="true"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    width="16"
+                    data-view-component="true"
+                    class="fill-current text-gray-300"
+                  >
+                    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+                  </svg>
+                  <a
+                    href="#"
+                    className="flex ml-2 font-semibold hover:text-blue-600"
+                  >
+                    dist
+                  </a>
+                </div>
+                <div className="6/12 flex items-center">
+                  <a
+                    href="#"
+                    className="flex ml-2  hover:text-blue-600 hover:underline"
+                  >
+                    add empty npm ignore so dist files are distributed with
+                    releases
+                  </a>
+                </div>
+
+                <div className="2/12">
+                  <a href="#" className="flex ml-2 ">
+                    5 weeks ago
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-between px-4 py-4">
+                <div className=" flex items-center 4/12">
+                  <svg
+                    aria-label="Directory"
+                    aria-hidden="true"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    width="16"
+                    data-view-component="true"
+                    class="fill-current text-gray-300"
+                  >
+                    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+                  </svg>
+                  <a
+                    href="#"
+                    className="flex ml-2 font-semibold hover:text-blue-600"
+                  >
+                    jest
+                  </a>
+                </div>
+                <div className="6/12 flex">
+                  <a
+                    href="#"
+                    className="flex ml-2  hover:text-blue-600 hover:underline"
+                  >
+                    Use `process.env.JEST_WORK_ID`
+                  </a>
+                </div>
+
+                <div className="2/12">
+                  <a href="#" className="flex ml-2 ">
+                    1 day ago
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-between px-4 py-4">
+                <div className=" flex 4/12">
+                  <svg
+                    aria-label="Directory"
+                    aria-hidden="true"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    width="16"
+                    data-view-component="true"
+                    class="fill-current text-gray-300"
+                  >
+                    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+                  </svg>
+                  <a
+                    href="#"
+                    className="flex ml-2 font-semibold hover:text-blue-600"
+                  >
+                    scripts
+                  </a>
+                </div>
+                <div className="6/12 flex">
+                  <a
+                    href="#"
+                    className="flex ml-2  hover:text-blue-600 hover:underline"
+                  >
+                    Prevent source maps from being generated
+                  </a>
+                </div>
+
+                <div className="2/12">
+                  <a href="#" className="flex ml-2 ">
+                    40 days ago
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-between px-4 py-4">
+                <div className=" flex 4/12">
+                  <svg
+                    aria-label="Directory"
+                    aria-hidden="true"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    version="1.1"
+                    width="16"
+                    data-view-component="true"
+                    class="fill-current text-gray-300"
+                  >
+                    <path d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3H7.5a.25.25 0 01-.2-.1l-.9-1.2C6.07 1.26 5.55 1 5 1H1.75z"></path>
+                  </svg>
+                  <a
+                    href="#"
+                    className="flex ml-2 font-semibold hover:text-blue-600"
+                  >
+                    src
+                  </a>
+                </div>
+                <div className="6/12 flex">
+                  <a
+                    href="#"
+                    className="flex ml-2  hover:text-blue-600 hover:underline"
+                  >
+                    added the different resources need for the project
+                  </a>
+                </div>
+
+                <div className="2/12">
+                  <a href="#" className="flex ml-2 ">
+                    40 days ago
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-between px-4 py-4">
+                <div className=" flex 4/12">
+                  <svg
+                    aria-label="File"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    data-view-component="true"
+                    class="fill-current w-4 text-gray-300"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 019 4.25V1.5H3.75zm6.75.062V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16h-9.5A1.75 1.75 0 012 14.25V1.75z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="#"
+                    className="flex ml-2 font-semibold hover:text-blue-600"
+                  >
+                    src
+                  </a>
+                </div>
+                <div className="6/12 flex">
+                  <a
+                    href="#"
+                    className="flex ml-2  hover:text-blue-600 hover:underline"
+                  >
+                    added the different resources need for the project
+                  </a>
+                </div>
+
+                <div className="2/12">
+                  <a href="#" className="flex ml-2 ">
+                    40 days ago
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-between px-4 py-4">
+                <div className=" flex 4/12">
+                  <svg
+                    aria-label="File"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    data-view-component="true"
+                    class="fill-current w-4 text-gray-300"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 019 4.25V1.5H3.75zm6.75.062V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16h-9.5A1.75 1.75 0 012 14.25V1.75z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="#"
+                    className="flex ml-2 font-semibold hover:text-blue-600"
+                  >
+                    src
+                  </a>
+                </div>
+                <div className="6/12 flex">
+                  <a
+                    href="#"
+                    className="flex ml-2  hover:text-blue-600 hover:underline"
+                  >
+                    added the different resources need for the project
+                  </a>
+                </div>
+
+                <div className="2/12">
+                  <a href="#" className="flex ml-2 ">
+                    40 days ago
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-between px-4 py-4">
+                <div className=" flex 4/12">
+                  <svg
+                    aria-label="File"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    data-view-component="true"
+                    class="fill-current w-4 text-gray-300"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 019 4.25V1.5H3.75zm6.75.062V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16h-9.5A1.75 1.75 0 012 14.25V1.75z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="#"
+                    className="flex ml-2 font-semibold hover:text-blue-600"
+                  >
+                    src
+                  </a>
+                </div>
+                <div className="6/12 flex">
+                  <a
+                    href="#"
+                    className="flex ml-2  hover:text-blue-600 hover:underline"
+                  >
+                    added the different resources need for the project
+                  </a>
+                </div>
+
+                <div className="2/12">
+                  <a href="#" className="flex ml-2 ">
+                    40 days ago
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-between px-4 py-4">
+                <div className=" flex 4/12">
+                  <svg
+                    aria-label="File"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    data-view-component="true"
+                    class="fill-current w-4 text-gray-300"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 019 4.25V1.5H3.75zm6.75.062V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16h-9.5A1.75 1.75 0 012 14.25V1.75z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="#"
+                    className="flex ml-2 font-semibold hover:text-blue-600"
+                  >
+                    src
+                  </a>
+                </div>
+                <div className="6/12 flex">
+                  <a
+                    href="#"
+                    className="flex ml-2  hover:text-blue-600 hover:underline"
+                  >
+                    added the different resources need for the project
+                  </a>
+                </div>
+
+                <div className="2/12">
+                  <a href="#" className="flex ml-2 ">
+                    40 days ago
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-between px-4 py-4">
+                <div className=" flex 4/12">
+                  <svg
+                    aria-label="File"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    data-view-component="true"
+                    class="fill-current w-4 text-gray-300"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 019 4.25V1.5H3.75zm6.75.062V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16h-9.5A1.75 1.75 0 012 14.25V1.75z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="#"
+                    className="flex ml-2 font-semibold hover:text-blue-600"
+                  >
+                    src
+                  </a>
+                </div>
+                <div className="6/12 flex">
+                  <a
+                    href="#"
+                    className="flex ml-2  hover:text-blue-600 hover:underline"
+                  >
+                    added the different resources need for the project
+                  </a>
+                </div>
+
+                <div className="2/12">
+                  <a href="#" className="flex ml-2 ">
+                    40 days ago
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-between px-4 py-4">
+                <div className=" flex 4/12">
+                  <svg
+                    aria-label="File"
+                    aria-hidden="true"
+                    viewBox="0 0 16 16"
+                    data-view-component="true"
+                    class="fill-current w-4 text-gray-300"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.75 1.5a.25.25 0 00-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 00.25-.25V6h-2.75A1.75 1.75 0 019 4.25V1.5H3.75zm6.75.062V4.25c0 .138.112.25.25.25h2.688a.252.252 0 00-.011-.013l-2.914-2.914a.272.272 0 00-.013-.011zM2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0113.25 16h-9.5A1.75 1.75 0 012 14.25V1.75z"
+                    ></path>
+                  </svg>
+                  <a
+                    href="#"
+                    className="flex ml-2 font-semibold hover:text-blue-600"
+                  >
+                    src
+                  </a>
+                </div>
+                <div className="6/12 flex">
+                  <a
+                    href="#"
+                    className="flex ml-2  hover:text-blue-600 hover:underline"
+                  >
+                    added the different resources need for the project
+                  </a>
+                </div>
+
+                <div className="2/12">
+                  <a href="#" className="flex ml-2 ">
+                    40 days ago
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* FILE EXPLORER ENDS HERE */}
+
+            {/* README CONTAINER STARTS HERE */}
+            <div className="readme-container rounded-md border border-gray-300 px-4 py-4 mt-4">
+              <h4 className="font-semibold">README.md</h4>
+              <div>
+                sLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                in luctus metus, a semper enim. Quisque malesuada egestas quam,
+                sit amet convallis velit posuere vel. Praesent sapien lorem,
+                tristique sit amet lacus nec, sodales accumsan eros. Suspendisse
+                a feugiat nisi, non feugiat metus. Sed vitae aliquet orci, at
+                consectetur orci. Pellentesque habitant morbi tristique senectus
+                et netus et malesuada fames ac turpis egestas. Mauris vel
+                posuere nunc, id fermentum est. Nam sit amet interdum mauris.
+                Curabitur tempus elit id interdum viverra. Duis fringilla tortor
+                ut lacus convallis ultricies. Maecenas rutrum congue augue, ut
+                placerat erat luctus ac. Nam in ligula nunc. Cras quis dui a leo
+                elementum placerat vel vel augue. Fusce sit amet sapien dictum,
+                maximus arcu a, ultrices tellus. Pellentesque urna ipsum,
+                posuere eget mi quis, molestie vehicula diam. Proin auctor
+                mauris dui, eu hendrerit ipsum ullamcorper vitae. Donec
+                sollicitudin nibh commodo nisi malesuada ullamcorper. Nullam ac
+                nisl venenatis, cursus lorem vel, commodo nunc. Lorem ipsum
+                dolor sit amet, consectetur adipiscing elit. Quisque mattis nisl
+                sagittis nunc pulvinar, interdum posuere massa porttitor. Etiam
+                leo ipsum, condimentum id turpis eu, laoreet auctor augue. Nulla
+                ut consectetur dui. Sed efficitur libero egestas massa
+                ullamcorper, vel ornare risus gravida.
+              </div>
+            </div>
+            {/* README CONTAINER ENDS HERE */}
           </div>
-          <div className="sidebar w-1/4">some textes here</div>
+          <div className="sidebar w-1/4">
+            sLorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam in
+            luctus metus, a semper enim. Quisque malesuada egestas quam, sit
+            amet convallis velit posuere vel. Praesent sapien lorem, tristique
+            sit amet lacus nec, sodales accumsan eros. Suspendisse a feugiat
+            nisi, non feugiat metus. Sed vitae aliquet orci, at consectetur
+            orci. Pellentesque habitant morbi tristique senectus et netus et
+            malesuada fames ac turpis egestas. Mauris vel posuere nunc, id
+            fermentum est. Nam sit amet interdum mauris. Curabitur tempus elit
+            id interdum viverra. Duis fringilla tortor ut lacus convallis
+            ultricies. Maecenas rutrum congue augue, ut placerat erat luctus ac.
+            Nam in ligula nunc. Cras quis dui a leo elementum placerat vel vel
+            augue. Fusce sit amet sapien dictum, maximus arcu a, ultrices
+            tellus. Pellentesque urna ipsum, posuere eget mi quis, molestie
+            vehicula diam. Proin auctor mauris dui, eu hendrerit ipsum
+            ullamcorper vitae. Donec sollicitudin nibh commodo nisi malesuada
+            ullamcorper. Nullam ac nisl venenatis, cursus lorem vel, commodo
+            nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Quisque mattis nisl sagittis nunc pulvinar, interdum posuere massa
+            porttitor. Etiam leo ipsum, condimentum id turpis eu, laoreet auctor
+            augue. Nulla ut consectetur dui. Sed efficitur libero egestas massa
+            ullamcorper, vel ornare risus gravida.
+          </div>
         </div>
         {/* REPO CONTENT ENDS HERE*/}
       </div>
+
+      {/* FOOTER STARTS HERE*/}
+      <footer className="container mx-auto text-md border-t font-semibold border-gray-300 py-10 flex items-center justify-between">
+        <ul className="flex items-center space-x-12">
+          <li>&copy; 2023 Github, Inc.</li>
+          <li>
+            <a href="#" className="text-blue-600 hover:underline">
+              Terms
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-blue-600 hover:underline">
+              Privacy
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-blue-600 hover:underline">
+              Security
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-blue-600 hover:underline">
+              Status
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-blue-600 hover:underline">
+              Help
+            </a>
+          </li>
+        </ul>
+        <div className="mx-8">
+          <a href="#">
+            <svg
+              aria-hidden="true"
+              viewBox="0 0 16 16"
+              data-view-component="true"
+              class="fill-current w-8 text-gray-400 hover:text-gray-600"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+              ></path>
+            </svg>
+          </a>
+        </div>
+        <ul className="flex items-center space-x-12">
+          <li>
+            <a href="#" className="text-blue-600 hover:underline">
+              Contact Github
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-blue-600 hover:underline">
+              Pricing
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-blue-600 hover:underline">
+              API
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-blue-600 hover:underline">
+              Training
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-blue-600 hover:underline">
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="#" className="text-blue-600 hover:underline">
+              About
+            </a>
+          </li>
+        </ul>
+      </footer>
+      {/* FOOTER ENDS HERE*/}
     </div>
   );
 }
